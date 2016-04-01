@@ -20,8 +20,8 @@ public class IMC {
     //Constructor
     public IMC() {
         this.nombre = JOptionPane.showInputDialog(null, "¿Cual es tu nombre?", "Nombre", 3);
-        this.peso = Float.valueOf(JOptionPane.showInputDialog(null, "¿Cual es tu peso (Kg)?", "Peso", 3));
-        this.estatura = Float.valueOf(JOptionPane.showInputDialog(null, "¿Cual es tu estatura (mts)?", "Estatura", 3));
+        setPeso(JOptionPane.showInputDialog(null, "¿Cual es tu peso (Kg)?", "Peso", 3)); 
+        setEstatura(JOptionPane.showInputDialog(null, "¿Cual es tu estatura (mts)?", "Estatura", 3));
     }
     
     public float calculaIMC(float peso, float estatura) {
@@ -51,5 +51,12 @@ public class IMC {
     
     public float getEstatura() {
         return this.estatura;
+    }
+    
+    public void setPeso(String peso) {
+        this.peso = Float.valueOf(peso);
+    }
+    public void setEstatura(String estatura) {
+        this.estatura = Float.valueOf(estatura);
     }
 }
