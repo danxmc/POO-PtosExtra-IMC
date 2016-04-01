@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
  */
 public class IMC {
     //Atributos
-    private float peso, estatura;
+    private static float peso, estatura;
     private String nombre;
     
     //Methods
